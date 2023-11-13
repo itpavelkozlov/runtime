@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/oapi-codegen/runtime/types"
+	"github.com/itpavelkozlov/runtime/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -493,7 +493,7 @@ func TestBindStyledParameterWithLocation(t *testing.T) {
 	expectedBig := big.NewInt(12345678910)
 
 	var dstBigNumber big.Int
-	err := BindStyledParameterWithLocation("simple", false, "id", ParamLocationUndefined,
+	err := BindStyledParameterWithLocation("simple", false, false, "id", ParamLocationUndefined,
 		"12345678910", &dstBigNumber)
 	assert.NoError(t, err)
 	assert.Equal(t, *expectedBig, dstBigNumber)

@@ -19,7 +19,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/oapi-codegen/runtime/types"
+	"github.com/itpavelkozlov/runtime/types"
 	"github.com/stretchr/testify/assert"
 )
 

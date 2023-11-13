@@ -1,4 +1,4 @@
-module github.com/oapi-codegen/runtime
+module github.com/itpavelkozlov/runtime
 
 go 1.20
 
